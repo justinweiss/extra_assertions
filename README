@@ -5,7 +5,7 @@ There's a few blocks of code I had to write in tests over and over again. To sav
 
 You should just be able to install this as a plugin using 
 
-    script/plugin install 
+    script/plugin install git://github.com/justinweiss/extra_assertions.git
 
 I haven't gemified it yet, but I'll do that later.
 
@@ -19,6 +19,3 @@ Inside your tests:
     assert_invalid @model
     assert_includes [1, 2, 3], 1
     assert_not_includes [1, 2, 3], 4
-
-
-Copyright (c) 2009 Justin Weiss released under the MIT license
