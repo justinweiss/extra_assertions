@@ -1,0 +1,24 @@
+Extra Assertions
+===============
+
+There's a few blocks of code I had to write in tests over and over again. To save time and effort, I made them assertions. These are the ones I came up with so far.
+
+You should just be able to install this as a plugin using 
+
+    script/plugin install 
+
+I haven't gemified it yet, but I'll do that later.
+
+
+Example
+=======
+
+Inside your tests:
+
+    assert_valid @model
+    assert_invalid @model
+    assert_includes [1, 2, 3], 1
+    assert_not_includes [1, 2, 3], 4
+
+
+Copyright (c) 2009 Justin Weiss released under the MIT license
