@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "extra_assertions"
-  s.version     = '0.1.1'
+  s.version     = '0.1.2'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Justin Weiss"]
   s.email       = ["justin@uberweiss.org"]
