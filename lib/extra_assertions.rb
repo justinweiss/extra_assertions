@@ -12,10 +12,14 @@ module ExtraAssertions
   end
 
   def assert_valid(record)
-    assert(record.valid?, "#{record.class.name} is invalid: #{record.errors.full_messages.join("\n")}")
+    assert_block (message || "#{record.class.name} is invalid: #{record.errors.full_messages.join("\n")}") do
+      record.valid?
+    end
   end
 
   def assert_invalid(record)
-    assert(!record.valid?, "#{record.class.name} should be invalid.")
+    assert_block (message || "#{record.class.name} should be invalid.") do
+      !record.valid?
+    end
   end
 end
